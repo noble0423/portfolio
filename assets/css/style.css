@@ -414,7 +414,8 @@ textarea.form-control {
 }
 
 .module-header-left {
-	text-align: left;
+	/* text-align: left; */
+	text-align: justify;
 }
 
 .module-header-left .module-line {
@@ -426,6 +427,7 @@ textarea.form-control {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 	font-size: 14px;
+	text-align: justify;
 }
 
 .module-line {
@@ -1085,9 +1087,30 @@ button.mfp-close {
 	top: 65%;
 }
 
+#moonmistScenarioPara {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 /* ---------------------------------------------- /*
  * Media
 /* ---------------------------------------------- */
+
+
+
+@media (min-width: 1300px) {
+	.portfolio-items-container .portfolio-item {
+		padding: 20px 30px;
+		/* border: 1px solid green; */
+	}
+}
+
+@media (min-width: 1500px) {
+	.portfolio-items-container .portfolio-item {
+		padding: 35px 70px;
+		/* border: 1px solid red; */
+	}
+}
 
 @media (max-width: 991px) {
 
