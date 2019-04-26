@@ -7,7 +7,7 @@
 	if(isset($_POST['c_name']) && isset($_POST['c_email']) && isset($_POST['c_subject']) && isset($_POST['c_message'])){
 		$name   = $_POST['c_name'];
 		// $from    = $_POST['c_email'];
-		$from = 'ryan@ryanmnoble.com';
+		$from = $_POST['ryan@ryanmnoble.com'];
 		$subject = $_POST['c_subject'];
 		$message = $_POST['c_message'];
 		// $headers = "From: webmaster@example.com" . "\r\n" .
