@@ -5,13 +5,15 @@
 	// $subject = 'Subject here...';
 
 	if(isset($_POST['c_name']) && isset($_POST['c_email']) && isset($_POST['c_subject']) && isset($_POST['c_message'])){
-		$name    = $_POST['c_name'];
-		$from    = $_POST['c_email'];
+		$name   = $_POST['c_name'];
+		// $from    = $_POST['c_email'];
+		$from = 'ryan@ryanmnoble.com';
 		$subject = $_POST['c_subject'];
 		$message = $_POST['c_message'];
-		$headers = $_POST['From: Jack Sparrow <jsparrow@blackpearl.com>' . PHP_EOL .
-    		'Reply-To: Jack Sparrow <jsparrow@blackpearl.com>' . PHP_EOL .
-			'X-Mailer: PHP/' . phpversion()];
+		// $headers = "From: webmaster@example.com" . "\r\n" .
+		// $headers = $_POST['From: Jack Sparrow <jsparrow@blackpearl.com>' . PHP_EOL .
+    	// 	'Reply-To: Jack Sparrow <jsparrow@blackpearl.com>' . PHP_EOL .
+		// 	'X-Mailer: PHP/' . phpversion()];
 		
 		// $headers = "MIME-Version: 1.0" . "\r\n"; 
 		// $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n"; 
