@@ -9,12 +9,16 @@
 		$from    = $_POST['c_email'];
 		$subject = $_POST['c_subject'];
 		$message = $_POST['c_message'];
+		$headers = 'From: Jack Sparrow <jsparrow@blackpearl.com>' . PHP_EOL .
+    		'Reply-To: Jack Sparrow <jsparrow@blackpearl.com>' . PHP_EOL .
+			'X-Mailer: PHP/' . phpversion();
+		
 		// $headers = "MIME-Version: 1.0" . "\r\n"; 
 		// $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n"; 
 		// $headers .= 'From: testuser@example.com' . "\r\n"; 
 		// $headers .= 'Return-Path: testuser@example.com' . "\r\n"; 
 
-		if (mail($to, $subject, $message, $from )) {
+		if (mail($to, $subject, $message, $from, $headers)) {
 		// if (mail($to, $subject, $message, $from, $headers, "-f testuser@example.com")) {
 			$result = array(
 				'message' => 'Thanks for contacting me!',
