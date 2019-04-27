@@ -35,8 +35,9 @@
 		$from    = $_POST['c_email'];
 		$subject = $_POST['c_subject'];
 		$message = $_POST['c_message'];
+		$headers = "From: webmaster@example.com" . "\r\n" .
 		
-		mail($to, $subject, $message, $from);
+		mail($to, $subject, $message, $headers);
 		// if (mail($to, $subject, $message, $from)) {
 		// 	$result = array(
 		// 		'message' => 'Thanks for contacting me!',
