@@ -1,3 +1,5 @@
+const gMaps = keys.googleMaps.API_KEY;
+
 (function($){
 
 	/* ---------------------------------------------- /*
@@ -203,6 +205,18 @@
 			return false;
 
 		});
+
+		/* ---------------------------------------------- /*
+		 * Google Maps Embed API
+		/* ---------------------------------------------- */
+		const newIframe = $("<iframe>");
+
+		newIframe.addClass("wow zoomIn slow");
+		newIframe.attr("width", "100%").attr("height", "600").attr("frameborder", "0");
+		newIframe.css("border", "0");
+		newIframe.attr("src", `https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE16TIoK_QIYRlzYuBdpV_9Q&key=${gMaps}&zoom=13`);
+
+		$("#googleMapsCol").append(newIframe);
 
 		/* ---------------------------------------------- /*
 		 * Google Map
