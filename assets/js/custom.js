@@ -2,16 +2,15 @@ const gMaps = keys.googleMaps.API_KEY;
 
 (function($){
 
-	/* ---------------------------------------------- /*
-	 * Preloader
-	/* ---------------------------------------------- */
-
-	$(window).load(function() {
-		$('#status').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow');
-	});
-
 	$(document).ready(function() {
+		/* ---------------------------------------------- /*
+		* Preloader
+		/* ---------------------------------------------- */
+
+		$(window).load(function() {
+			$('#status').fadeOut();
+			$('#preloader').delay(550).fadeOut('slow');
+		});
 
 		/* ---------------------------------------------- /*
 		 * Animated scrolling / Scroll Up
